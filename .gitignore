@@ -1,0 +1,13 @@
+target
+dependencies
+*.iml
+logs
+*.log
+*.info
+*.backup
+*.versionsBackup
+/.idea/
+!/.idea/runConfigurations
+*.pid
+*.port
+.DS_Store

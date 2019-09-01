@@ -1,0 +1,49 @@
+spring:
+  profiles:
+    active: ${ENV}
+  application:
+    name: @project.artifactId@
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 0
+      idle-timeout: 60000
+  jpa:
+    open-in-view: false
+  jackson:
+    serialization.write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd
+
+
+server:
+  port: @server.port@
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# expose data on the /actuator/info endpoint
+info:
+  app:
+    name: @project.name@
+  build:
+    group: @project.groupId@
+    artifact: @project.artifactId@
+    description: @project.description@
+    version: @project.version@
+    timestamp: @project.timestamp@
+
+
+app.properties:
+  aProp: aText
+
+
+springfox.documentation.swagger.v2.path: /api-docs
+
+
+
+
