@@ -30,7 +30,7 @@
 
         <oracle.jdbc.version>12.1.0.2.0</oracle.jdbc.version>
         <cucumber.version>3.0.2</cucumber.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
         <feign.version>8.18.0</feign.version>
 
         <!-- junit-platform v1.2.0 is required as 1.1.0 can't run JUnit5 properly (known bug) -->
